@@ -1,0 +1,13 @@
+{
+	"name": "LS_SNOWFLAKE_NEW_CONN",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Snowflake",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"connectionString": "jdbc:snowflake://vt02214.central-us.azure.snowflakecomputing.com/?user=HANU1899&db=DEV&warehouse=COMPUTE_WH&role=ACCOUNTADMIN",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDgzQjRGNzkxLUUzNDktNDExOS05MUExLUY5NERERkU0MEQ2MF8yOWE4YTc5OS04NDc5LTRlNmItODExNS1mNDhkZTk4NmIxYmIiDQp9"
+		}
+	}
+}
