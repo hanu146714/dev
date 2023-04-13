@@ -1,0 +1,16 @@
+{
+	"name": "DS_ORACLE_TAB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_oracle_conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "ADF_USER",
+			"table": "DEPT"
+		}
+	}
+}

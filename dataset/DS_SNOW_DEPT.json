@@ -1,0 +1,35 @@
+{
+	"name": "DS_SNOW_DEPT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SNOWFLAKE_NEW_CONN",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "DEPTNO",
+				"type": "NUMBER",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "DNAME",
+				"type": "VARCHAR",
+				"precision": 14,
+				"scale": 0
+			},
+			{
+				"name": "LOC",
+				"type": "VARCHAR",
+				"precision": 13,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "DEPT"
+		}
+	}
+}
