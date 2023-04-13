@@ -1,0 +1,43 @@
+{
+	"name": "DS_TGT_ORDERS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azure_sql_conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "orderid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "orderamount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "orderqty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "order_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "productid",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "target",
+			"table": "orders"
+		}
+	}
+}

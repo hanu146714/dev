@@ -1,0 +1,12 @@
+{
+	"name": "DS_ORDERS_SRC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azure_sql_conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "DS_CONFIG_LOAD_DATE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azure_sql_conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"name": "full_name",
+	"properties": {
+		"type": "Flowlet",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				},
+				{
+					"name": "input1"
+				},
+				{
+					"name": "output1"
+				}
+			],
+			"scriptLines": [
+				"input(output(",
+				"          first_name as string,",
+				"          last_name as string,",
+				"          prefix as string",
+				"     ),",
+				"     order: 0,",
+				"     allowSchemaDrift: true) ~> input1",
+				"input1 derive(full_name = concat(first_name, last_name)) ~> derivedColumn1",
+				"derivedColumn1 output() ~> output1"
+			]
+		}
+	}
+}
