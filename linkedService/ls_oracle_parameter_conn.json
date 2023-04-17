@@ -1,0 +1,21 @@
+{
+	"name": "ls_oracle_parameter_conn",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"SCHEMA_NAMAE": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Oracle",
+		"typeProperties": {
+			"connectionString": "host=localhost;port=1521;servicename=XE;user id=@{linkedService().SCHEMA_NAMAE}",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwY2Q4NjU2NS00ODJhLTRkNDMtYWNiOS1mMGI2MzQ2NDk0ZmQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-SELF-HOST",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
