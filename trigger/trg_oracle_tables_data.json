@@ -1,0 +1,29 @@
+{
+	"name": "trg_oracle_tables_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_ORACLE_PARAMS",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"SCHEMA_NAME": "HANU",
+					"TABLE_NAME": "PRODUCT"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2023-04-17T05:25:00Z",
+				"endTime": "2023-04-17T08:25:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
