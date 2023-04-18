@@ -1,21 +1,22 @@
 {
-	"name": "DS_BLOB_DEPT",
+	"name": "DS_METDATA_FILES",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "LS_datalake_gen2_conn",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": "dept.csv",
-				"container": "dev"
+				"type": "AzureBlobFSLocation",
+				"fileName": "AdventureWorks_Customers.csv",
+				"folderPath": "SRC",
+				"fileSystem": "dev"
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "\r",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
