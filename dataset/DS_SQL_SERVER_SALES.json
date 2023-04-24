@@ -1,0 +1,12 @@
+{
+	"name": "DS_SQL_SERVER_SALES",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_server_conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
